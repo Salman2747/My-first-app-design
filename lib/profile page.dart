@@ -94,12 +94,16 @@ class _ProfilePageState extends State<ProfilePage> {
         child: Align(
             alignment: Alignment.center,
             child: Container(
-              height: MediaQuery.of(context).size.height/1,
-              width: MediaQuery.of(context).size.width,
+             // height: MediaQuery.of(context).size.height/1,
+             // width: MediaQuery.of(context).size.width,
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+               mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
+
+
                   // Profile image,name,address container
+
+
                   Container(
                     height: MediaQuery.of(context).size.height/6,
                     width: MediaQuery.of(context).size.width,
@@ -119,7 +123,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               ),
                               fit: BoxFit.cover,
 
-                            ),
+                           ),
                             border: Border.all(
                               color: Color.fromRGBO(105, 107, 103, 1),
                               width: 3,
@@ -129,7 +133,11 @@ class _ProfilePageState extends State<ProfilePage> {
                             color: Color.fromRGBO(250, 251, 252, 1),
                           ),
                         ),
+
+
                         //Address and name container
+
+
                         Container(
                           height: MediaQuery.of(context).size.height/7,
                           width: MediaQuery.of(context).size.width/2,
@@ -140,7 +148,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               children: [
                                 //name text
                                 Padding(
-                                  padding: const EdgeInsets.only(
+                                  padding:  EdgeInsets.only(
                                     right: 20,
 
                                   ),
@@ -157,7 +165,8 @@ class _ProfilePageState extends State<ProfilePage> {
                                   ),
                                 ),
                                 //address text
-                                Text("Kashipur Padma Road,Khalispur,Khulna",
+                                Text("Kashipur Padma Road,\nKhalispur,Khulna,\n"
+                                    "Bangladesh",
                                   style: TextStyle(
                                     fontWeight: FontWeight.w500,
                                     fontStyle: FontStyle.normal,
@@ -233,6 +242,10 @@ class _ProfilePageState extends State<ProfilePage> {
                       ],
                     ),
                   ),
+
+                  //Button Container
+
+
                   Container(
                     height: MediaQuery.of(context).size.height/5,
                     width: MediaQuery.of(context).size.width,
@@ -246,9 +259,13 @@ class _ProfilePageState extends State<ProfilePage> {
                           crossAxisAlignment: WrapCrossAlignment.center,
                           direction: Axis.horizontal,
                           children: [
+
+                            //Post Button Container
+
+
                             Container(
-                              height: MediaQuery.of(context).size.height/17,
-                              width:MediaQuery.of(context).size.width/3 ,
+                              height: MediaQuery.of(context).size.height/15,
+                              width:MediaQuery.of(context).size.width/2.9,
                               decoration: BoxDecoration(
                                   color: Color.fromRGBO(250, 250, 250, 6),
 
@@ -284,7 +301,8 @@ class _ProfilePageState extends State<ProfilePage> {
                               ),
                             ),
 
-                            //Following button container
+                            //Messenger Button Container
+
 
                             Container(
 
@@ -321,7 +339,10 @@ class _ProfilePageState extends State<ProfilePage> {
 
                               ),
                             ),
+
+
                             //follower button container
+
                             Container(
                               height: MediaQuery.of(context).size.height/15,
                               width: MediaQuery.of(context).size.width/3,
@@ -357,7 +378,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
                             Container(
                               height: MediaQuery.of(context).size.height/15,
-                              width: MediaQuery.of(context).size.width/3,
+                              width: MediaQuery.of(context).size.width/2.9,
                               decoration: BoxDecoration(
                                 color:Color.fromRGBO(250, 250, 250, 1) ,
                                 border:Border.all(
